@@ -26,7 +26,7 @@ CREATE TABLE usuario_deficiencia (
     usuario_id INT NOT NULL,
     deficiencia_id INT NOT NULL,
     grau_id INT,
-    descricao TEXT, -- Agora a descrição é do caso individual
+    descricao TEXT,
     data_registro DATETIME DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY (usuario_id, deficiencia_id),
     FOREIGN KEY (usuario_id) REFERENCES usuarios(id) ON DELETE CASCADE,
